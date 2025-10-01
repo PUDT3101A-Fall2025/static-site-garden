@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    {{ content }}
+    <div class="bigBox">
+      {% if tags != plant %}
+         <h1>Plant Garden</h1>
+      {% endif %}
+
+      {{ content }}
+    </div>
   </body>
 </html>

@@ -2,6 +2,15 @@
 title: Welcome to our Garden
 ---
 
-{% for plant in collections.plant %}
-<div>{{ plant.data.title }}</div>
-{% endfor %}
+<link rel="stylesheet" href="/style.css" />
+
+<div class="plantListBox">
+  {% for plant in collections.plant %}
+  <div class="plantList">
+    <a href="{{ plant.url }}">
+      {{ plant.data.title }}
+      <img src="{{ plant.data.photo }}" />
+    </a>
+  </div>
+  {% endfor %}
+</div>
