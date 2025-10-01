@@ -1,1 +1,7 @@
-<h1>We're going to put together a garden of plants...</h1>
+---
+title: Welcome to our Garden
+---
+
+{% for plant in collections.plant %}
+<div>{{ plant.data.title }}</div>
+{% endfor %}

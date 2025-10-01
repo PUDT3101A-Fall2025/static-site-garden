@@ -6,4 +6,6 @@ export default function (eleventyConfig) {
 	// Keeps the same directory structure.
 	eleventyConfig.addPassthroughCopy("source/**/*.css");
 	eleventyConfig.addPassthroughCopy("source/**/*.js");
+
+	eleventyConfig.addGlobalData("layout", "base.html");
 };
