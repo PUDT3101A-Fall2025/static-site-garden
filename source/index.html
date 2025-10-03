@@ -3,5 +3,5 @@ title: Welcome to our Garden
 ---
 
 {% for plant in collections.plant %}
-<div>{{ plant.data.title }}</div>
+<div><a href="{{ plant.url }}">{{ plant.data.title }}</a></div>
 {% endfor %}
